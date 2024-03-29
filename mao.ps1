@@ -2,8 +2,8 @@
 (New-Object -ComObject shell.application).toggleDesktop()
 
 # download files
-Invoke-WebRequest https://github.com/maosnumber1fan/mao/mao.jpg -O "$env:TEMP\mao.jpg"
-Invoke-WebRequest https://github.com/maosnumber1fan/mao/mao.mp3 -O "$env:TEMP\mao.mp3"
+Invoke-WebRequest https://raw.githubusercontent.com/maosnumber1fan/mao/main/mao.jpg -O "$env:TEMP\mao.jpg"
+Invoke-WebRequest https://github.com/maosnumber1fan/mao/raw/main/mao.mp3 -O "$env:TEMP\mao.mp3"
 
 # hide taskbar
 $location = @{Path = 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\StuckRects3'; Name = 'Settings'}
